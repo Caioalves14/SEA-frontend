@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body{
+    margin: 0px;
+}
+body *{
+    box-sizing: border-box;
+}
+.main-user{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-user{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-user > h1{
+    font-size: 3vw;
+    color: #77ffc0;
+}
+.rigth-user{
+    width: 50vw;
+    height: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    cursor: pointer;
+    flex: 1;
+    width: 200px;
+    height: 200px; 
+    background-color: #2f2841;
+    color: #f0ffffde;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #8a8a8a; 
+    line-height: 1.5;
+}
+.container-users {
+    display: flex;
+}
+.card-professor {
+    background-color: #2f2841;
+    color: #00ff88;
+}
+.card-aluno {
+    background-color: #2f2841;
+    color: #00ff88;
+}
+.imagem-usuario {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.card:hover {
+    filter: brightness(1.1); 
+}
+@media (max-width: 768px) {
+    .left-user > h1 {
+        font-size: 4vw; 
+    }
+
+    .rigth-user {
+        height: auto; 
+    }
+    
+    .card {
+        width: 100%; 
+        height: auto; 
+        margin: 10px 0; 
+    }
+
+    .card h1 {
+        font-size: 1.5rem; 
+    }
+}

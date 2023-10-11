@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="left-cadastro"> 
+            <img src="../imagem/Visual.gif" alt="escola" class="imagem-escola">
+        </div>
+        <div class="rigth-cadastro">
+            <div class="card-cadastro">
+                <h1>Cadastro do Professor</h1>
+                <div class="textfild">
+                    <input type="text" name="professorNomeadd" placeholder="Nome..." autocomplete="off" class="professornomeadd" id="professorNomeadd">
+                </div>
+                <div class="textfild">
+                    <input type="text" name="professorEmailadd" placeholder="Email..." autocomplete="off" class="professoremailadd" id="professorEmailadd">
+                </div>
+                <div class="textfild">
+                    <input type="text" name="professorTelefoneadd" placeholder="Telefone..." autocomplete="off" class="professortelefoneadd" id="professorTelefoneadd">
+                </div>
+                <div class="textfild">
+                    <input type="text" name="professorCpfadd" placeholder="CPF..." autocomplete="off" class="professorcpfadd" id="professorCPFadd">
+                </div>
+                <div class="textfild">
+                    <input type="date" name="professorDataDeNascimentoadd" placeholder="DataDeNascimento..." autocomplete="off" class="professordataDeNascimentoadd" id="professorDataDeNascimentoadd">
+                </div>
+                <div class="textfild">
+                    <input type="text" name="professorSiapeadd" placeholder="Siape..." autocomplete="off" class="professorsiapeadd" id="professorSiapeadd">
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="closeAddPopup(), adicionar(), telaEnabled()">Confirmar</button>
+                    <button type="button" onclick="closeAddPopup(), telaEnabled()"><a href="../index.html">Cancelar</a></button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
