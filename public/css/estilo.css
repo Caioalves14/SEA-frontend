@@ -1,8 +1,10 @@
 body{
     margin: 0px;
+    
 }
 body*{
     box-sizing: border-box;
+    width: 100vh;
 }
 
 .main-login{
@@ -27,7 +29,7 @@ body*{
 }
 .rigth-login{
     width: 50vw;
-    height: 100vw;
+    /* height: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,9 +121,10 @@ body*{
     .card-login{
         width: 90%;
     }
-
 }
-
 .recuperar-senha{
+    color:#BDBDBD;
+}
+.cadastro{
     color:#BDBDBD;
 }
