@@ -39,5 +39,24 @@
             </div>    
         </div>
     </div>
+    <script>
+        function cadastrarUsuario() {
+            fetch('https://exemplo.com/api/minharota')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro na requisição');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Processar os dados da API
+                    document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    document.getElementById('resultado').textContent = 'Erro na requisição da API';
+                });
+        }
+    </script>
 </body>
 </html>

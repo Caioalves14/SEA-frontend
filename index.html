@@ -15,20 +15,23 @@
             <div class="card-login">
                 <h1>Login</h1>
                 <div class="textfild">
-                    <label form="usuario">Usuário</label>
-                    <input type="text"name="usuario" placeholder="Usuário">
+                    <label form="usuario">Email</label>
+                    <input type="text"id="email"name="email"placeholder="Email" required>
                 </div>
                 <div class="textfild">
                     <label form="usuario">Senha</label>
-                    <input type="password"name="senha" placeholder="Senha">
+                    <input type="password" id ="senha" name="senha" placeholder="Senha" required>
                 </div>
-                <button class="btn-login">Login</button>
+                <button class="btn-login" onclick="login()" >Login</button>
+                <a class="cadastro" href="views/tipousuario.html">
+                    <p class="complement">Não possui cadastro?</p>
+                </a>
                 <a class="recuperar-senha" href="views/recuperar-senha.html">
                     <p class="complement">Esqueci minha senha</p>
                 </a>
             </div>  
         </div>
     </div>
-    
+    <script src="login-usuario.js"></script>
 </body>
 </html>

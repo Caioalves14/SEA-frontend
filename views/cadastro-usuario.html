@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body onload="toggleCategory()">
+    <script>
+        // console.log("Origem da página: " + window.location.origin);
+    </script>
+    <div class="main-cadastro">
+        <div class="left-cadastro"> 
+            <img src="../public/imagem/aluno.png" alt="escola" class="imagem-escola">
+        </div>
+        <div class="rigth-cadastro">
+            <div class="card-cadastro">
+                <h1>Cadastrar Usuário</h1>
+                <!-- <div class="categoria-container">
+                    <button id="aluno" type="button" onclick="toggleCategory(categoria='aluno')">Aluno</button>
+                    <button id="professor" type="button" onclick="toggleCategory(categoria='professor')">Professor</button>
+                </div> -->
+                <div class="categoria-container">
+                    <button id="aluno" type="button" onclick="toggleCategory('aluno')">Aluno</button>
+                    <button id="professor" type="button" onclick="toggleCategory('professor')">Professor</button>
+                </div>
+                <div class="textfild">
+                    <input type="text" name="alunoNomeadd" placeholder="Nome..." autocomplete="off" class="alunonomeadd" id="alunoNomeadd">
+                </div>
+                <div class="textfild">
+                    <input type="text" name="alunoEmailadd" placeholder="Email..." autocomplete="off" class="alunoemailadd" id="alunoEmailadd">
+                </div>
+                <div class="textfild">
+                    <input type="password" name="alunoSenha" placeholder="Senha..." autocomplete="off" class="alunotelefoneadd" id="senhaAlunoadd">
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="cadastrarUsuario()">Confirmar</button>
+                    <button type="button" onclick="closeAddPopup(), telaEnabled()"><a href="../index.html">Cancelar</a></button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="cadastro-usuario.js"></script>
+</body>
+</html>
