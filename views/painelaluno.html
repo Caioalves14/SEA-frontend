@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno</title>
+    <link rel="stylesheet" href="../public/css/painel-aluno.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <img id="menu" src="../public/imagem/menu.png" alt="">
+        <img id="home" src="../public/imagem/home.png" alt="">
+        <img id="perfil" src="../public/imagem/perfil.png" alt="">
+        <img id="calendario-icon" src="../public/imagem/calendario-icon.png" alt="">
+        <img id="config" src="../public/imagem/config.png" alt="">
+        <img id="ajuda" src="../public/imagem/ajuda.png" alt="">
+    </nav>
+    <header>
+        <div class="inicio">
+            <img class="logo" src="../public/imagem/logo.png" alt="logotipo">
+            <h1 id="titulo">SEA</h1>
+        </div>
+        <div class="option-horizontal">
+            <img id="mdia" src="../public/imagem/dia.png">
+            <img id="not" src="../public/imagem/notifica.png">
+            <img id= "perfilopc" src="../public/imagem/perfilopc.png">
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="textos">
+            <h1 id="nome">Olá, Fulano!</h1>
+            <p id="atv">Lista de Atividades:</p>
+        </div>
+        <div id="av">
+            <div id="atvi">
+                <div class="atividade">
+                    <img class="at" src="../public/imagem/at1.png" alt="">
+                    <div id="g1">
+                        <h3 id="t-atv">
+                            Título da atividade
+                        </h3>
+                        <p id="disciplina">
+                            Disciplina
+                        </p>
+                    </div>
+                    <div id="g2">
+                        <p id="dia">
+                            Sexta-Feira,
+                        </p>
+                        <p id="hora">
+                            23:59
+                        </p>
+                    </div>
+                </div>
+                <div class="atividade">
+                    <img class="at" src="../public/imagem/at2.png" alt="">
+                    <div id="g1">
+                        <h3 id="t-atv">
+                            
+                            Título da atividade
+                        </h3>
+                        <p id="disciplina">
+                            Disciplina
+                        </p>
+                    </div>
+                    <div id="g2">
+                        <p id="dia">
+                            Sexta-Feira,
+                        </p>
+                        <p id="hora">
+                            23:59
+                        </p>
+                    </div>
+                </div>
+                <div class="atividade">
+                    <img class="at" src="../public/imagem/at3.png" alt="">
+                    <div id="g1">
+                        <h3 id="t-atv">
+                            Título da atividade
+                        </h3>
+                        <p id="disciplina">
+                            Disciplina
+                        </p>
+                    </div>
+                    <div id="g2">
+                        <p id="dia">
+                            Sexta-Feira,
+                        </p>
+                        <p id="hora">
+                            23:59
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="calendar">
+                <div class="calendar-header">
+                    <button id="prev-month"><</button>
+                    <h1 id="current-month"></h1>
+                    <button id="next-month">></button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sab</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="turmac">
+            Turmas:
+        </div>
+        <div id="salas">
+            <div class="turmas">turma</div>
+            <div class="turmas">turma</div>
+            <div class="turmas">turma</div>
+            <div class="turmas">turma</div>
+            <div class="turmas">turma</div>
+            <div class="turmas">turma</div>
+        </div>
+
+    </div>
+    <script src="../public/js/painelaluno.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+html,body{
+    background: #201B2C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+header{
+    background: #201B2C;
+    position: fixed;
+    margin-left: 3.95rem;
+    display: flex;
+    height: 4.375rem;
+    width: 95%;
+    border: 1px solid #4B4B4B;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio{
+    display: flex;
+}
+
+.option-horizontal {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+    padding-right: 3rem;
+    gap: 19.2px;
+}
+
+#container{
+    margin-left: 3.95rem;
+    margin-top: 4rem;;
+    width: 94.75%;
+    height: 28.625rem;
+    display: grid;
+    justify-content: center;
+}
+
+#textos{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    padding-top: 3rem;
+    color: #FFFFFF;
+}
+
+#atvi{
+    padding-right: 6.5rem;
+    display: grid;
+    gap: 0.64rem;
+    align-content: center;
+}
+
+.atividade{
+    display: flex;
+    width: 39.45281rem;
+    height: 3.73219rem;
+    border-radius: 1.25rem;
+    background: #2D2840;
+    box-shadow: 2px 6px 19px 0px rgba(0, 0, 0, 0.25);
+    color: #ADADAD;
+    align-items: center;
+}
+
+#atv{
+    font-size: 1.267rem;
+}
+
+.at{
+    padding-left: 0.96rem;
+    width: 2.76456rem;
+    height: 2.76456rem;
+}
+
+#g1{
+    padding-left: 1.57rem;
+    font-family: 'Poppins';
+}
+
+#g2{
+    font-size: 0.806rem;
+    font-family: 'Poppins';
+    padding-left: 17rem;
+}
+
+#t-atv,#disciplina,#dia,#hora{
+    margin: 0;
+}
+
+#av{
+    width: 63.1245rem;
+    height: 17.85456rem;
+    display: flex;
+}
+
+#calendar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4B4B4B;
+    width: 17.7rem;
+    height: 17.7rem;
+    border-radius: 0.46075rem;
+    background: #2D2840;
+    box-shadow: 1.84305px 14.74442px 17.509px 0px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.864rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prev-month,#next-month {
+    background-color: #2D2840;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+table {
+    width: 80%;
+    height: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 1px;
+}
+
+#current-month {
+    color: #FFFFFF;
+    font-size: 0.80631rem;
+    text-transform: capitalize;
+}
+
+th {
+    color: #B5BEC6;
+    border: none;
+}
+
+td {
+    background-color: #2D2840;
+    color: #FFFFFF;
+    border: none;
+}
+
+td.today {
+    width: 2rem; /* Largura total desejada (incluindo preenchimento e borda) */
+    height: 2rem; /* Altura total desejada (incluindo preenchimento e borda) */
+    background-color: #4699E6;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 0; /* Remova qualquer preenchimento */
+    border: none; /* Remova qualquer borda */
+}
+
+td.not-this-month {
+    color: #717171;
+}
+
+#salas{
+    padding-top: 2rem;
+    width: 56.72138000000001rem;
+    height: 24.93881rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.turmas{
+    width: 16.34331rem;
+    height: 11.51906rem;
+    border-radius: 1.25rem;
+    background: #D9D9D9;
+    text-align: center;
+}
+
+#turmac{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.26713rem;
+}
+
+#titulo{
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding-top: 0.8rem;
+}
+
+.logo{
+    max-width: 64px;
+    max-height: 64px;
+    padding-right: 1rem;
+    padding-left: 1.25rem;
+}
+
+nav{
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #201B2C;
+    width: 3.86rem;
+    height: 100%;
+    border: 1px solid #4B4B4B;
+    margin: 0;
+    gap: 0.5rem;
+}
+
+#menu{
+    margin-top: .625rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.625rem 0.75rem;
+}
+
+#home{
+    margin-top: 5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.625rem 0.75rem;
+}
+
+#perfil,#calendario-icon,#config,#mdia,#not{
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.625rem 0.75rem;
+}
+
+#ajuda{
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: 8rem;
+    padding: 0.625rem 0.75rem;
+}
+
+#perfilopc{
+    width: 2.53419rem;
+    height: 2.53419rem;
+}
