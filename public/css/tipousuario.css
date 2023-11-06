@@ -27,7 +27,7 @@ body *{
 }
 .rigth-user{
     width: 50vw;
-    height: 55vw;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
