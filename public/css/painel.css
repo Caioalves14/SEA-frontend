@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins&display=swap');
+
+/* Estilos para o corpo da página */
+body {
+    color: white;
+    margin: 0;
+    background: #201B2C;
+    display: flex;
+    width: 100%;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Estilos para a barra horizontal superior */
+.nav-horizontal {
+    padding: 0 20px;
+    height: 70px;
+    border-bottom: 1px solid #4B4B4B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-horizontal .title {
+    display: flex;
+    width: 142px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-horizontal .title h1 {
+    width: 71px;
+    height: 43px;
+}
+
+.nav-horizontal .title img {
+    width: 64px;
+    height: 64px;
+}
+
+.nav-horizontal .option-horizontal {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+}
+
+.nav-horizontal .option-horizontal img {
+    width: 29px;
+    height: 29px;
+}
+
+/* Estilos para a barra vertical esquerda */
+.nav-vertical .nav-bar {
+    display: flex;
+    width: 67px;
+    height: 1024px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 0 0 12px;
+    border-right: 1px solid #4B4B4B;
+    transition: width 0.3s;
+}
+
+.nav-bar:hover {
+    width: 250px;
+    align-items: flex-start;
+}
+
+.nav-vertical .nav-bar .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.nav-vertical .nav-bar .menu {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 13px;
+}
+
+.nav-vertical .nav-bar .menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-vertical .nav-bar .menu span {
+    display: none;
+    margin-left: 10px;
+    color: #757575;
+}
+
+.nav-vertical .nav-bar .menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-bar .option-vertical {
+    padding-top: 24px;
+}
+
+.nav-bar .option-vertical span {
+    color: #757575;
+    display: none;
+    margin-left: 10px;
+}
+
+.nav-bar .option-vertical .space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: 76.5%;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.separator {
+    border-top: 1px solid #666;
+    margin: 0;
+    width: 100%;
+    align-self: center;
+}
+
+.nav-bar:hover .option-vertical .space {
+    height: 71%;
+}
+
+.nav-bar:hover .menu-item span {
+    display: inline;
+}
+
+.nav-bar:hover .menu span {
+    display: inline;
+}
+
+.nav-bar:hover .menu-item span {
+    display: inline;
+}
+
+.nav-bar:hover span {
+    display: inline;
+}
+
+.option-horizontal img {
+    cursor: pointer;
+}
+
+.option-vertical {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Estilos para o conteúdo da página */
+.content {
+    padding: 0 30px;
+}
+
+.content h2 {
+    padding: 20px 0;
+}
+
+.content button {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content .create-turma {
+    color: #201B2C;
+    width: 350px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: none;
+    background: #0F8;
+    box-shadow: 2px 6px 19px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content .create-atividade {
+    color: #0F8;
+    width: 350px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 4px solid #0F8;
+    background: #201B2C;
+    box-shadow: 2px 6px 19px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Alterar o estilo do cursor para "pointer" nos botões e aplicar uma transição suave */
+.content button,
+.content .create-turma,
+.content .create-atividade {
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicione uma transição de 0.3 segundos na cor de fundo */
+}
+
+/* Quando o mouse passar sobre os botões, altere a cor de fundo */
+.content button:hover,
+.content .create-turma:hover,
+.content .create-atividade:hover {
+    background-color: #0F8; /* Nova cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto para branco ao passar o mouse */
+    box-shadow: 2px 6px 19px 0px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+.content p {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.content .buttons {
+    margin: 10px 0;
+}
+
+.content .box-atividade {
+    width: 685px;
+    height: 216px;
+    flex-shrink: 0;
+}
+
+.box-atividade .atividade {
+    padding: 10px;
+    margin: 10px;
+    width: 75%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #2D2840;
+    box-shadow: 2px 6px 19px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content .box-turma {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as turmas quebrem em novas linhas */
+    justify-content: space-between; /* Distribui as turmas igualmente nas colunas */
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.box-turma .turma {
+    width: calc(30% - 20px); /* 30% de largura com 20px de espaço entre as turmas */
+    height: 185px;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #2D2840;
+}
+
+.atividade img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.atividade h2 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-shrink: 0;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.atividade p {
+    color: #D9D9D9;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.describe-atv {
+    display: flex;
+}

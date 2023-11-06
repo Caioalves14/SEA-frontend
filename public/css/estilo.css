@@ -3,6 +3,7 @@ body{
 }
 body*{
     box-sizing: border-box;
+    width: 100vh;
 }
 
 .main-login{
@@ -27,7 +28,6 @@ body*{
 }
 .rigth-login{
     width: 50vw;
-    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +90,13 @@ body*{
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #BDBDBD;
+}
+.btn-login a{
+    text-decoration: none; 
+    color: inherit; 
+}
+.cadastro{
+    color:#BDBDBD;
 }
 
 @media only screen and(max-width: 950px){

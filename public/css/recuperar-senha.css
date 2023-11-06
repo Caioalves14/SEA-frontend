@@ -1,11 +1,13 @@
 @charset "UTF-8";
-body *{
+
+*{
+    padding: 0;
     box-sizing: border-box;
     margin: 0px;
 }
 
 .container {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-color: #201b2c;
     display: flex;
@@ -25,7 +27,7 @@ body *{
     flex-direction: column;
     position: relative; */
     width: 50vw;
-    height: 55vw;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
