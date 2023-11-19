@@ -1,67 +1,68 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const currentDate = new Date();
-    let currentMonth = currentDate.getMonth();
-    let currentYear = currentDate.getFullYear();
-  
-    const calendarBody = document.getElementById("calendar-body");
-    const currentMonthElement = document.getElementById("current-month");
-  
-    function generateCalendar() {
-      const firstDay = new Date(currentYear, currentMonth, 1);
-      const lastDay = new Date(currentYear, currentMonth + 1, 0);
-      const currentDay = currentDate.getDate();
-  
-      currentMonthElement.textContent = firstDay.toLocaleString("default", { month: "long" }) + " " + currentYear;
-  
-      let date = new Date(firstDay);
-      calendarBody.innerHTML = "";
-  
-      while (date <= lastDay) {
-        const row = document.createElement("tr");
-  
-        for (let i = 0; i < 7; i++) {
-          if (i === date.getDay()) {
-            const cell = document.createElement("td");
-            cell.textContent = date.getDate();
-  
-            
-            if (date.getDate() === currentDay && date.getMonth() === currentMonth && date.getFullYear() === currentYear) {
-                cell.classList.add("today"); // Adiciona a classe 'today' apenas para o dia atual no mês atual
-            } else if (date.getMonth() !== currentMonth) {
-                    cell.classList.add("not-this-month"); // Adiciona a classe 'not-this-month' para destacar os dias que não são do mês atual
-                }
-                            
-              
-            row.appendChild(cell);
-            date.setDate(date.getDate() + 1);
-          } else {
-            const cell = document.createElement("td");
-            row.appendChild(cell);
-          }
-        }
-  
-        calendarBody.appendChild(row);
-      }
+const diasTag = document.querySelector(".dias"),
+    dataAtual = document.querySelector(".data-atual"),
+    iconesAntProx = document.querySelectorAll(".seta span");
+
+// obtendo nova data, ano e mês atuais
+let data = new Date(),
+    anoAtual = data.getFullYear(),
+    mesAtual = data.getMonth();
+
+// armazenando o nome de todos os meses
+const meses = [
+    "Janeiro", "Fevereiro", "Março", "Abril", 
+    "Maio", "Junho", "Julho", "Agosto", "Setembro", 
+    "Outubro", "Novembro", "Dezembro"
+];
+
+const renderizarCalendario = () => {
+    let primeiroDiaDoMes = new Date(anoAtual, mesAtual, 1).getDay(), // obtendo o primeiro dia do mês
+        ultimoDiaDoMes = new Date(anoAtual, mesAtual + 1, 0).getDate(), // obtendo o último dia do mês
+        ultimoDiaDoMesAnterior = new Date(anoAtual, mesAtual, 0).getDate(); // obtendo o último dia do mês anterior
+    let liTag = "";
+
+    for (let i = primeiroDiaDoMes; i > 0; i--) {
+        // criando li dos últimos dias do mês anterior
+        liTag += `<li class="inactive">${ultimoDiaDoMesAnterior - i + 1}</li>`;
     }
-  
-    generateCalendar();
-  
-    document.getElementById("prev-month").addEventListener("click", function () {
-      currentMonth -= 1;
-      if (currentMonth < 0) {
-        currentMonth = 11;
-        currentYear -= 1;
-      }
-      generateCalendar();
+
+    for (let i = 1; i <= ultimoDiaDoMes; i++) {
+        // criando li de todos os dias do mês atual
+        // adicionando a classe ativa à li se o dia atual, o mês e o ano corresponderem
+        let hoje =
+            i === data.getDate() &&
+                mesAtual === new Date().getMonth() &&
+                anoAtual === new Date().getFullYear()
+                ? "active"
+                : "";
+        liTag += `<li class="${hoje}">${i}</li>`;
+    }
+
+    for (let i = ultimoDiaDoMes; i < 6; i++) {
+        // criando li dos primeiros dias do próximo mês
+        liTag += `<li class="inactive">${i - ultimoDiaDoMes + 1}</li>`;
+    }
+    dataAtual.innerText = `${meses[mesAtual]} ${anoAtual}`; // passando o mês e o ano atuais como texto da data atual
+    diasTag.innerHTML = liTag;
+};
+
+renderizarCalendario();
+
+iconesAntProx.forEach(seta => {
+    // obtendo ícones de anterior e próximo
+    seta.addEventListener("click", () => {
+        // adicionando evento de clique em ambos os ícones
+        // se o ícone clicado for o ícone anterior, então decrementar o mês atual em 1, senão incrementar em 1
+        mesAtual = seta.id === "ant" ? mesAtual - 1 : mesAtual + 1;
+
+        if (mesAtual < 0 || mesAtual > 11) {
+            // se o mês atual for menor que 0 ou maior que 11
+            // criando uma nova data do ano e mês atuais e passando como valor da data
+            data = new Date(anoAtual, mesAtual, new Date().getDate());
+            anoAtual = data.getFullYear(); // atualizando o ano atual com o ano da nova data
+            mesAtual = data.getMonth(); // atualizando o mês atual com o mês da nova data
+        } else {
+            data = new Date(); // passando a data atual como valor da data
+        }
+        renderizarCalendario(); // chamando a função renderizarCalendario
     });
-  
-    document.getElementById("next-month").addEventListener("click", function () {
-      currentMonth += 1;
-      if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear += 1;
-      }
-      generateCalendar();
-    });
-  });
-  
+});

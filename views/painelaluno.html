@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Aluno</title>
     <link rel="stylesheet" href="../public/css/painel-aluno.css">
+    <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -15,18 +16,37 @@
 </head>
 
 <body>
-
-    <nav>
-        <img id="menu" src="../public/imagem/menu.png" alt="">
-        <img id="home" src="../public/imagem/home.png" alt="">
-        <img id="perfil" src="../public/imagem/perfil.png" alt="">
-        <img id="calendario-icon" src="../public/imagem/calendario-icon.png" alt="">
-        <img id="config" src="../public/imagem/config.png" alt="">
-        <a href="../index.html"><img id="logout" src="../public/imagem/Icon/box-arrow-in-left.svg" alt=""></a>
-        <img id="ajuda" src="../public/imagem/ajuda.png" alt="">
-        
-
+    <!--Menu-->
+    <nav id="menu">
+        <div class="menu-item" id="menu-icon">
+            <img src="../public/imagem/menu.png" alt="Menu">
+        </div>
+        <div class="menu-item" id="home">
+            <img src="../public/imagem/home.png" alt="Home">
+            <span class="menu-text">Início</span>
+        </div>
+        <div class="menu-item" id="perfil">
+            <img src="../public/imagem/perfil.png" alt="Perfil">
+            <span class="menu-text">Perfil</span>
+        </div>
+        <div class="menu-item" id="calendario-icon">
+            <img src="../public/imagem/calendario-icon.png" alt="Calendario">
+            <span class="menu-text">Calendário</span>
+        </div>
+        <div class="menu-item" id="config">
+            <img src="../public/imagem/config.png" alt="Configurações">
+            <span class="menu-text">Configurações</span>
+        </div>
+        <div class="menu-item" id="ajuda">
+            <img src="../public/imagem/ajuda.png" alt="Ajuda">
+            <span class="menu-text">Ajuda</span>
+        </div>
+        <a href="../index.html" class="menu-item" id="logout">
+            <img src="../public/imagem/Icon/box-arrow-in-left.svg" alt="Logout">
+            <span class="menu-text">Logout</span>
+        </a>
     </nav>
+    <!--Cabeçalho-->
     <header>
         <div class="inicio">
             <img class="logo" src="../public/imagem/logo.png" alt="logotipo">
@@ -35,16 +55,17 @@
         <div class="option-horizontal">
             <img id="mdia" src="../public/imagem/dia.png">
             <img id="not" src="../public/imagem/notifica.png">
-            <img id= "perfilopc" src="../public/imagem/perfilopc.png">
+            <img id= "perfilopc" src="../public/imagem/perfil.png">
         </div>
     </header>
-
+    <!--Container Principal-->
     <div id="container">
         <div id="textos">
             <h1 id="nome">Olá, Fulano!</h1>
             <p id="atv">Lista de Atividades:</p>
         </div>
         <div id="av">
+            <!--Atividades-->
             <div id="atvi">
                 <div class="atividade">
                     <img class="at" src="../public/imagem/at1.png" alt="">
@@ -105,29 +126,32 @@
                     </div>
                 </div>
             </div>
-            <div id="calendar">
-                <div class="calendar-header">
-                    <button id="prev-month"></button>
-                    <h1 id="current-month"></h1>
-                    <button id="next-month">></button>
+
+            <!-- Calendário -->
+            <div class="container-cale">
+                <div class="header-cale">
+                    <div class="seta">
+                        <span id="ant" class="esquerda">&lt;</span>
+                        <p class="data-atual"></p>
+                        <span id="prox" class="direita">&gt;</span>
+                    </div>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dom</th>
-                            <th>Seg</th>
-                            <th>Ter</th>
-                            <th>Qua</th>
-                            <th>Qui</th>
-                            <th>Sex</th>
-                            <th>Sab</th>
-                        </tr>
-                    </thead>
-                    <tbody id="calendar-body">
-                    </tbody>
-                </table>
+                <div class="calendario">
+                    <ul class="semanas">
+                        <li>Dom</li>
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sáb</li>
+                    </ul>
+                    <ul class="dias"></ul>
+                </div>
             </div>
+
         </div>
+        <!--Turmas-->
         <div id="turmac">
             Turmas:
         </div>
