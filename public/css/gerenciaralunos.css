@@ -92,12 +92,14 @@ form {
 
 #caixa {
     display: flex;
-    width: 64.25rem;
-    height: 36.25rem;
+    width: 66.25rem;
+    height: 40.25rem;
     background-color: #2D2840;
     filter: drop-shadow(1.84px 5.52px 17.50px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -231,3 +233,40 @@ a {
     width: 2.53419rem;
     height: 2.53419rem;
 }
+
+#add-aluno{
+    cursor: pointer;
+    display: flex;
+    color: #FFF;
+    border: 0;
+    width: 174px;
+    height: 40px;
+    border-radius: 23px;
+    background: #4E466C;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  #add-aluno:hover {
+    background-color: #1b1826;
+    display: flex;
+    align-items: center;
+}
+
+  #botao{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7rem;
+  }
+
+  #add{
+    padding-right: 2rem;
+    height: 2rem;
+  }
