@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno</title>
+    <link rel="stylesheet" href="../public/css/gerenciaralunos.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Menu-->
+    <nav id="menu">
+        <div class="menu-item" id="menu-icon">
+            <img src="../public/imagem/menu.png" alt="Menu">
+        </div>
+        <div class="menu-item" id="home">
+            <img src="../public/imagem/home.png" alt="Home">
+            <span class="menu-text">Início</span>
+        </div>
+        <div class="menu-item" id="perfil">
+            <img src="../public/imagem/perfil.png" alt="Perfil">
+            <span class="menu-text">Perfil</span>
+        </div>
+        <div class="menu-item" id="calendario-icon">
+            <img src="../public/imagem/calendario-icon.png" alt="Calendario">
+            <span class="menu-text">Calendário</span>
+        </div>
+        <a style="text-decoration: none;" href="altera-senha.html" class="menu-item" id="changePassword">
+            <img src="../public/imagem/Icon/icon _key_.svg">
+            <span class="menu-text">Change Password</span>
+        </a>
+        <a style="text-decoration: none;"href="../index.html" class="menu-item" id="logout">
+            <img src="../public/imagem/Icon/icon _signout_.svg">
+            <span class="menu-text">Logout</span>
+        </a>
+        <div class="menu-item" id="ajuda">
+            <img src="../public/imagem/ajuda.png" alt="Ajuda">
+            <span class="menu-text">Ajuda</span>
+        </div>
+    </nav>
+    <!--Cabeçalho-->
+    <header>
+        <div class="inicio">
+            <img class="logo" src="../public/imagem/logo.png" alt="logotipo">
+            <h1 id="titulo">SEA</h1>
+        </div>
+        <div class="option-horizontal">
+            <img id="mdia" src="../public/imagem/dia.png">
+            <img id="not" src="../public/imagem/notifica.png">
+            <img id="perfilopc" src="../public/imagem/perfil.png">
+        </div>
+    </header>
+<!--Container Principal-->
+    <div id="container">
+        <!--Area de Pesquisa-->
+        <div id="pesquisa">
+            <h1>Gerenciar Alunos</h1>
+            <form action="/sua-pagina-de-processamento" method="get">
+                <input type="text" id="termo" name="termo" placeholder="Digite o termo de pesquisa" required class="termo">
+                <select class="seletor" name="campo">
+                    <option value="nome">Nome</option>
+                    <option value="matricula">Matrícula</option>
+                </select>
+            </form>
+            <div class="divider"></div>
+        </div>
+        <!--Tabela de alunos-->
+        <div id="caixa">
+            <table class="customTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>CRE</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Cell 1</td>
+                        <td>Row 3, Cell 2</td>
+                        <td>Row 3, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 4, Cell 1</td>
+                        <td>Row 4, Cell 2</td>
+                        <td>Row 4, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 5, Cell 1</td>
+                        <td>Row 5, Cell 2</td>
+                        <td>Row 5, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 6, Cell 1</td>
+                        <td>Row 6, Cell 2</td>
+                        <td>Row 6, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 7, Cell 1</td>
+                        <td>Row 7, Cell 2</td>
+                        <td>Row 7, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 8, Cell 1</td>
+                        <td>Row 8, Cell 2</td>
+                        <td>Row 8, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 9, Cell 1</td>
+                        <td>Row 9, Cell 2</td>
+                        <td>Row 9, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 10, Cell 1</td>
+                        <td>Row 10, Cell 2</td>
+                        <td>Row 10, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 11, Cell 1</td>
+                        <td>Row 11, Cell 2</td>
+                        <td>Row 11, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Row 12, Cell 1</td>
+                        <td>Row 12, Cell 2</td>
+                        <td>Row 12, Cell 3</td>
+                        <td class="quatro">
+                            <a href="/index.html">
+                                <img src="../public/imagem/editar.png" alt="Editar">
+                            </a>
+                            <a href="/index.html">
+                                <img src="../public/imagem/excluir.png" alt="Excluir">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Generated at CSSPortal.com -->
+        </div>
+    </div>
+</body>
+
+</html>
