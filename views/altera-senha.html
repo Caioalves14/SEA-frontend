@@ -19,21 +19,23 @@
                 <form action="/auth/changePassword" method="POST">
                     <label for="password">Nova senha:</label>
                     <!-- Espaço para adicionar a senha nova -->
-                    <input type="password">
+                    <input type="password" id="novaSenha">
 
                     <label for="password">Confirme sua nova senha:</label>
                     <!-- Espaço para adicionar novamente a senha nova -->
-                    <input type="password">
+                    <input type="password" id="confNovaSenha">
 
-                    <label for="password">Senha antiga:</label>
+                    <label for="password">Senha atual:</label>
                     <!-- Espaço para adicionar a senha antiga -->
-                    <input type="password">
+                    <input type="password" id="senhaAntiga">
 
                     <!-- botão de alterar a senha -->
-                    <button type="submit" class="botao">Alterar senha</button>
+                    <button type="button"  onclick="alterarSenha()" class="botao">Alterar senha</button>
                 </form>
             </div>
         </section>
+        <!-- Chamando o script -->
+        <script src="alterar-senha.js"></script>
     </header>
 </body>
 </html>
