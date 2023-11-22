@@ -1,0 +1,233 @@
+/* HTML e corpo da página */
+html,
+body {
+    background: #201B2C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho da página */
+header {
+    background: #201B2C;
+    position: fixed;
+    display: flex;
+    height: 4.375rem;
+    width: 100%;
+    border: 1px solid #4B4B4B;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.inicio {
+    display: flex;
+}
+
+.option-horizontal {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+    padding-right: 3rem;
+    gap: 19.2px;
+}
+
+/* Contêiner principal da página */
+#container {
+    margin-left: 3.95rem;
+    margin-top: 5rem;
+    width: 94.75%;
+    height: 28.625rem;
+    display: grid;
+    justify-items: center;
+}
+
+ /* Area de Pesquisa */
+#pesquisa {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form {
+    padding-left: 17rem;
+}
+
+.seletor {
+    border: 0;
+    width: 12.875rem;
+    height: 2.5rem;
+    background-color: #2D2840;
+    color: #ffffff;
+    font-size: 0.813rem;
+    border-radius: 1.4375rem;
+    padding-left: 1rem;
+    margin-left: 1.6rem;
+}
+
+.termo {
+    width: 12.875rem;
+    height: 2.5rem;
+    border-radius: 1.625rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding-left: 2rem;
+}
+
+
+.divider {
+    width: 64.25rem;
+    height: .125rem;
+    background-color: #4B4B4B;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+#caixa {
+    display: flex;
+    width: 64.25rem;
+    height: 36.25rem;
+    background-color: #2D2840;
+    filter: drop-shadow(1.84px 5.52px 17.50px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Tabela de alunos */
+table.customTable {
+    width: 90%;
+    background-color: #2D2840;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #4B4B4B;
+    color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+table.customTable td,
+table.customTable th {
+    border-width: 2px;
+    border-color: #4B4B4B;
+    border-style: solid;
+    padding: 5px;
+}
+
+table.customTable thead {
+    background-color: #4E466C;
+}
+
+.quatro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quatro img {
+    width: 1.3rem;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding-top: 0.8rem;
+}
+
+.logo {
+    max-width: 64px;
+    max-height: 64px;
+    padding-right: 1rem;
+    padding-left: 1.25rem;
+}
+ /* Menu da pagina */
+#menu {
+    margin-top: 4.375rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #201B2C;
+    width: 3.86rem;
+    height: 100%;
+    border: 1px solid #4B4B4B;
+    transition: width 0.3s;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.625rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.menu-item:hover {
+    width: 100%;
+    background-color: #2D2840;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.menu-text {
+    display: none;
+    padding-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif
+}
+
+#menu:hover {
+    width: 15rem;
+    z-index: 3;
+}
+
+#menu:hover .menu-text {
+    display: flex;
+}
+
+#home,
+#ajuda {
+    margin-top: 5rem;
+    padding: 0.625rem 1rem;
+}
+
+#mdia,
+#not {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.625rem 0.75rem;
+}
+
+#perfilopc {
+    width: 2.53419rem;
+    height: 2.53419rem;
+}
