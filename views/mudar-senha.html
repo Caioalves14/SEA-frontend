@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insira sua nova senha</title>
+    <link rel="stylesheet" href="../public/css/recuperar-senha.css">
+    <link rel="stylesheet" href="../public/css/resoinsivo.css">
+</head>
+<body>
+    <!-- Definindo uma div semântica com uma classe com o nome de conteiner -->
+    <header class="container">
+        <!-- Definindo outra div semântica com uma classe com o nome de usuario-container -->
+        <section class="usuario-container">
+            <!-- Adicionando uma div para ficar responsável pelos dados -->
+            <div class="gestao-de-dados">
+                <!-- H2 como o titulo da página -->
+                <h2>Insira sua nova senha</h2><br><br>
+                <!-- Tag de formulário -->
+                <form action="/auth/changePassword" method="POST">
+                    <label for="password">Nova senha:</label>
+                    <!-- Espaço para adicionar a senha nova -->
+                    <input type="password" id="novaSenha">
+
+                    <label for="password">Confirmar senha:</label>
+                    <!-- Espaço para adicionar novamente a senha nova -->
+                    <input type="password" id="confNovaSenha">
+                    <!-- botão de alterar a senha -->
+                    <button type="button"class="botao">Confirmar senha</button>
+                </form>
+            </div>
+        </section>
+</body>
+</html>
