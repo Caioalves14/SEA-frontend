@@ -4,7 +4,6 @@
 
 body{
     margin: 0;
-    overflow: hidden;
 }
 body *{
     box-sizing: border-box;
@@ -12,7 +11,6 @@ body *{
 
 .main-cadastro{
     width: 100%;
-    height: 100%;
     background-color: #201b2c;
     display: flex;
     justify-content: center;
@@ -28,30 +26,29 @@ body *{
 }
 .left-cadastro > h1{
     font-size: 3vw;
-    color: #77ffc0;
+    color: #2CD986;
     font-family: 'Poppins', sans-serif;
 }
 .rigth-cadastro{
-    width: 50vw;
-    height: 55vw;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
-.card-cadastro{
+.card-cadastro {
     width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 15px 0px 15px;
-    background: #2f2841;
+    padding: 20px 15px;
+    background: rgb(47, 40, 65);
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-    margin-top: 60px 0px;
+    box-shadow: rgba(0, 0, 0, 0.337) 0px 10px 40px;
 }
 .card-cadastro > h1{
-    color: #00ff88;
+    color: #ffffff;
     font-weight: 800;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -84,8 +81,11 @@ body *{
     font-family: 'Poppins', sans-serif;
 }
 .button-container {
+    width: 75%;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .button-container button {
@@ -93,17 +93,21 @@ body *{
     padding: 10px 5px;
     margin: 10px 5px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    color: #ffffff;
+    background: #2CD986;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #BDBDBD;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    margin: 2px;
 }
+
+.button-container button:hover {
+    background-color: #1D8F58;
+}
+
 a {
     text-decoration: none; 
     color: inherit; 
@@ -114,7 +118,7 @@ a {
     height: 48px;
 
     background-color: #514869;
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     color: white;
 
@@ -137,9 +141,9 @@ a {
 }
 
 .categoria-container > #aluno {
-    background-color: #7967a3;
+    background-color: #2D2840;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 50%;
     height: 100%;
     font-weight: bold;
