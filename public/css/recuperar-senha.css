@@ -57,9 +57,9 @@
 }
 
 .gestao-de-dados h2 {
-    color: #00ff88;
     font-weight: 800;
     margin: 0;
+    color: #ffffff;
 }
 
 .gestao-de-dados form {
@@ -95,7 +95,7 @@
 }
 
 .botao {
-    background-color:#00ff88;
+    background-color:#2CD986;
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -111,8 +111,7 @@
 }
 
 .botao:hover{
-    background: #00ff88;
-    box-shadow: 0px 10px 40px -12px #cfcfcf;
+    background: #00C56A;
 }
 
 @media screen and (max-width: 768px) {

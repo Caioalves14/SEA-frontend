@@ -10,9 +10,6 @@
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
@@ -20,52 +17,51 @@
     <!--Menu-->
     <nav id="menu">
         <div class="menu-item" id="menu-icon">
-            <img src="../public/imagem/menu.png" alt="Menu">
+            <img src="../public/imagem/Icon/mingcute_menu-fill.svg" alt="Menu">
         </div>
+        <div id="separator"></div>
         <div class="menu-item" id="home">
-            <img src="../public/imagem/home.png" alt="Home">
+            <img src="../public/imagem/Icon/Home-simple-door.svg" alt="Home">
             <span class="menu-text">Início</span>
         </div>
         <div class="menu-item" id="perfil">
-            <img src="../public/imagem/perfil.png" alt="Perfil">
+            <img src="../public/imagem/Icon/User 1.svg" alt="Perfil">
             <span class="menu-text">Perfil</span>
         </div>
         <div class="menu-item" id="calendario-icon">
-            <img src="../public/imagem/calendario-icon.png" alt="Calendario">
+            <img src="../public/imagem/Icon/Calendar.svg" alt="Calendario">
             <span class="menu-text">Calendário</span>
         </div>
         <a style="text-decoration: none;" href="altera-senha.html" class="menu-item" id="changePassword">
             <img src="../public/imagem/Icon/icon _key_.svg">
-            <span class="menu-text">Change Password</span>
+            <span class="menu-text">Alterar Senha</span>
         </a>
-        <a style="text-decoration: none;"href="../index.html" class="menu-item" id="logout">
+        <a style="text-decoration: none;" href="../index.html" class="menu-item" id="logout">
             <img src="../public/imagem/Icon/icon _signout_.svg">
             <span class="menu-text">Logout</span>
         </a>
         <div class="menu-item" id="ajuda">
-            <img src="../public/imagem/ajuda.png" alt="Ajuda">
+            <img src="../public/imagem/Icon/Help-circle.svg" alt="Ajuda">
             <span class="menu-text">Ajuda</span>
         </div>
     </nav>
     <!--Cabeçalho-->
-    <header>
-        <div class="inicio">
-            <img class="logo" src="../public/imagem/logo.png" alt="logotipo">
-            <h1 id="titulo">SEA</h1>
-        </div>
-        <div class="option-horizontal">
-            <img id="mdia" src="../public/imagem/dia.png">
-            <img id="not" src="../public/imagem/notifica.png">
-            <img id="perfilopc" src="../public/imagem/perfil.png">
-        </div>
-    </header>
-<!--Container Principal-->
+
+    <!--Container Principal-->
     <div id="container">
+        <header>
+            <div class="inicio">
+                <img class="logo" src="../public/imagem/logo.png" alt="logotipo">
+                <h1 id="titulo">SEA</h1>
+            </div>
+            <img id="not" src="../public/imagem/Icon/Vector.svg">
+        </header>
         <!--Area de Pesquisa-->
         <div id="pesquisa">
             <h1>Gerenciar Alunos</h1>
             <form action="/sua-pagina-de-processamento" method="get">
-                <input type="text" id="termo" name="termo" placeholder="Digite o termo de pesquisa" required class="termo">
+                <input type="text" id="termo" name="termo" placeholder="Digite o termo de pesquisa" required
+                    class="termo">
                 <select class="seletor" name="campo">
                     <option value="nome">Nome</option>
                     <option value="matricula">Matrícula</option>
@@ -80,7 +76,7 @@
                     <tr>
                         <th>Nome</th>
                         <th>Matrícula</th>
-                        <th>CRE</th>
+                        <th>E-mail</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
@@ -247,9 +243,22 @@
             <div id="botao">
                 <button id="add-aluno"> <img id="add" src="../public/imagem/add.png" alt="+">Aluno</button>
             </div>
-            
+
+            <dialog>
+                <div id="modaladd">
+                    <h2>Convidar Aluno</h2>
+                    <input type="email" id="emailDialogInput" placeholder="Digite o e-mail do aluno" autocomplete="off"
+                        class="alunoemailadd" id="alunoEmailadd">
+                    <div id="botoes">
+                        <button id="ok">ok</button>
+                        <button id="cancela">cancelar</button>
+                    </div>
+                </div>
+            </dialog>
+
         </div>
     </div>
+    <script src="../public/js/gerenciaralunos.js"></script>
 </body>
 
 </html>

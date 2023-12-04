@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body{
+    
     margin: 0;
 }
 body *{
@@ -23,7 +24,7 @@ body *{
 }
 .left-user > h1{
     font-size: 3vw;
-    color: #77ffc0;
+    color: #699BF7;
 }
 .rigth-user{
     width: 50vw;
@@ -58,7 +59,7 @@ body *{
 
 .card p {
     font-size: 1rem;
-    color: #8a8a8a; 
+    color: #ADADAD; 
     line-height: 1.5;
 }
 .container-users {
