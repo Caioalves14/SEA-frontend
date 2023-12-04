@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite o código recebido no email</title>
     <link rel="stylesheet" href="../public/css/recuperar-senha.css">
     <link rel="stylesheet" href="../public/css/resoinsivo.css">
-    <title>Alterar Senha</title>
 </head>
 <body>
     <!-- Definindo uma div semântica com uma classe com o nome de conteiner -->
@@ -15,28 +15,17 @@
             <!-- Adicionando uma div para ficar responsável pelos dados -->
             <div class="gestao-de-dados">
                 <!-- H2 como o titulo da página -->
-                <h2>Alterar sua senha</h2><br><br>
+                <h2>Digite o código enviado no email:</h2><br><br>
                 <!-- Tag de formulário -->
                 <form action="/auth/changePassword" method="POST">
-                    <label for="password">Nova senha:</label>
-                    <!-- Espaço para adicionar a senha nova -->
-                    <input type="password" id="novaSenha">
-
-                    <label for="password">Confirmar senha:</label>
-                    <!-- Espaço para adicionar novamente a senha nova -->
-                    <input type="password" id="confNovaSenha">
-
-                    <label for="password">Senha atual:</label>
-                    <!-- Espaço para adicionar a senha antiga -->
-                    <input type="password" id="senhaAtual">
-
+                    <label for="password">Digite o código :</label>
+                    <!-- Espaço para adicionar o código enviado -->
+                    <input type="text" id="codEmail">
                     <!-- botão de alterar a senha -->
-                    <button type="button"  onclick="alterarSenha()" class="botao">Alterar senha</button>
+                    <button type="button" class="botao"><a href="mudar-senha.html">Confirmar código</a></button>
+                    <button type="button" class="botao"><a href="">Não recebi email</a></button>
                 </form>
             </div>
         </section>
-        <!-- Chamando o script -->
-        <script src="alterar-senha.js"></script>
-    </header>
 </body>
 </html>

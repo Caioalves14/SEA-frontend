@@ -7,17 +7,21 @@
     <title>Painel do Professor</title>
 </head>
 <body>
+    <!-- Navegação vertical -->
     <div class="nav-vertical">
         <div class="nav-bar">
+            <!-- Menu principal -->
             <div class="menu">
                 <img src="../public/imagem/Icon/mingcute_menu-fill.svg">
                 <span>Menu</span>    
             </div>
             <div class="separator"></div>
+            <!-- Opções do menu vertical -->
             <div class="option-vertical">
                 <div class="title-menu">
                     <span>PRINCIPAL</span>
                 </div>
+                <!-- Itens do menu -->
                 <div class="menu-item">
                     <img src="../public/imagem/Icon/Home-simple-door.svg">
                     <span>Início</span>
@@ -46,67 +50,98 @@
             </div>
         </div>
     </div>
+    <!-- Conteúdo principal -->
     <div class="container">
         <div class="nav-horizontal">
+            <!-- Título do cabeçalho -->
             <div class="title">
                 <img src="../public/imagem/logo.png" alt="logo">
                 <h1>SEA</h1>
             </div>
+            <!-- Opções horizontais -->
             <div class="option-horizontal">
                 <img src="../public/imagem/Icon/Vector (2).svg">
                 <img src="../public/imagem/Icon/Vector.svg">
                 <img src="../public/imagem/Icon/Ellipse 6.svg">
             </div>
         </div>
+        <!-- Conteúdo principal da página -->
         <div class="content">
             <h2>Olá, Fulano!</h2>
+            <!-- Botões de ação -->
             <div class="buttons">
                 <button class="create-turma">CRIAR TURMA</button>
                 <button class="create-atividade">CRIAR ATIVIDADE</button>
             </div>
             <p>Lista de Atividade:</p>
-            <div class="box-atividade">
-                <div class="atividade">
-                    <div class="describe-atv">
-                        <img src="../public/imagem/Icon/Ellipse 2.svg">
-                        <div class="text-atividade">
-                            <h2>Titulo da Atividade</h2>
-                            <p>Disciplina</p>
+            <!-- Caixa de atividades -->
+            <div class="atv">
+                <div class="box-atividade">
+                    <div class="atividade">
+                        <div class="describe-atv">
+                            <img src="../public/imagem/Icon/Ellipse 2.svg">
+                            <div class="text-atividade">
+                                <h2>Titulo da Atividade</h2>
+                                <p>Disciplina</p>
+                            </div>
+                        </div>
+                        <div class="option-atv">
+                            <img src="../public/imagem/Icon/Edit.svg">
+                            <img src="../public/imagem/Icon/Delete.svg">
                         </div>
                     </div>
-                    <div class="option-atv">
-                        <img src="../public/imagem/Icon/Edit.svg">
-                        <img src="../public/imagem/Icon/Delete.svg">
+                    <div class="atividade">
+                        <div class="describe-atv">
+                            <img src="../public/imagem/Icon/Ellipse 3.svg">
+                            <div class="text-atividade">
+                                <h2>Titulo da Atividade</h2>
+                                <p>Disciplina</p>
+                            </div>
+                        </div>
+                        <div class="option-atv">
+                            <img src="../public/imagem/Icon/Edit.svg">
+                            <img src="../public/imagem/Icon/Delete.svg">
+                        </div>
+                    </div>
+                    <div class="atividade">
+                        <div class="describe-atv">
+                            <img src="../public/imagem/Icon/Ellipse 4.svg">
+                            <div class="text-atividade">
+                                <h2>Titulo da Atividade</h2>
+                                <p>Disciplina</p>
+                            </div>
+                        </div>
+                        <div class="option-atv">
+                            <img src="../public/imagem/Icon/Edit.svg">
+                            <img src="../public/imagem/Icon/Delete.svg">
+                        </div>
                     </div>
                 </div>
-                <div class="atividade">
-                    <div class="describe-atv">
-                        <img src="../public/imagem/Icon/Ellipse 3.svg">
-                        <div class="text-atividade">
-                            <h2>Titulo da Atividade</h2>
-                            <p>Disciplina</p>
+                <!-- Calendário -->
+                <div class="container-cale">
+                    <div class="header-cale">
+                        <div class="seta">
+                            <span id="ant" class="esquerda">&lt;</span>
+                            <p class="data-atual"></p>
+                            <span id="prox" class="direita">&gt;</span>
                         </div>
                     </div>
-                    <div class="option-atv">
-                        <img src="../public/imagem/Icon/Edit.svg">
-                        <img src="../public/imagem/Icon/Delete.svg">
-                    </div>
-                </div>
-                <div class="atividade">
-                    <div class="describe-atv">
-                        <img src="../public/imagem/Icon/Ellipse 4.svg">
-                        <div class="text-atividade">
-                            <h2>Titulo da Atividade</h2>
-                            <p>Disciplina</p>
-                        </div>
-                    </div>
-                    <div class="option-atv">
-                        <img src="../public/imagem/Icon/Edit.svg">
-                        <img src="../public/imagem/Icon/Delete.svg">
+                    <div class="calendario">
+                        <ul class="semanas">
+                            <li>Dom</li>
+                            <li>Seg</li>
+                            <li>Ter</li>
+                            <li>Qua</li>
+                            <li>Qui</li>
+                            <li>Sex</li>
+                            <li>Sáb</li>
+                        </ul>
+                        <ul class="dias"></ul>
                     </div>
                 </div>
             </div>
             <p>Turmas:</p>
+            <!-- Caixa de turmas -->
             <div class="box-turma">
                 <div class="turma"></div>
                 <div class="turma"></div>
@@ -117,5 +152,6 @@
             </div>
         </div>
     </div>
+    <script src="../public/js/painelaluno.js"></script>
 </body>
 </html>

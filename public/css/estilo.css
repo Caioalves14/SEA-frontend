@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins&display=swap');
 body{
     background-color: #201b2c;
     margin: 0px;
@@ -25,6 +27,7 @@ body*{
 .left-login > h1{
     font-size: 3vw;
     color: #2CD986;
+    font-family: 'Poppins', sans-serif;
 }
 .rigth-login{
     width: 50vw;
@@ -48,6 +51,7 @@ body*{
     color: #2CD986;
     font-weight: 800;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild{
     width: 100%;
@@ -68,13 +72,16 @@ body*{
     box-shadow:  0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild > label{
     color:#f0ffffde;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild > input::placeholder{
     color: #f0ffff94;
+    font-family: 'Poppins', sans-serif;
 }
 .btn-login{
     width: 100%;
@@ -89,9 +96,7 @@ body*{
     color: #2b134b;
     background: #2CD986;
     cursor: pointer;
-}
-.btn-login:hover{
-    background-color: #00c56a;
+    box-shadow: 0px 10px 40px -12px #BDBDBD;
 }
 
 .btn-login a{
@@ -100,6 +105,7 @@ body*{
 }
 .cadastro{
     color:#BDBDBD;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and(max-width: 950px){
@@ -134,7 +140,9 @@ body*{
 
 .recuperar-senha{
     color:#BDBDBD;
+    font-family: 'Poppins', sans-serif;
 }
 .cadastro{
     color:#BDBDBD;
+    font-family: 'Poppins', sans-serif;
 }

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins&display=swap');
+
 body{
     margin: 0;
     overflow: hidden;
@@ -26,6 +29,7 @@ body *{
 .left-cadastro > h1{
     font-size: 3vw;
     color: #77ffc0;
+    font-family: 'Poppins', sans-serif;
 }
 .rigth-cadastro{
     width: 50vw;
@@ -50,6 +54,7 @@ body *{
     color: #00ff88;
     font-weight: 800;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild{
     width: 100%;
@@ -59,6 +64,7 @@ body *{
     align-items: flex-start;
     justify-content: center;
     margin: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild >input{
     width: 100%;
@@ -71,9 +77,11 @@ body *{
     box-shadow:  0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .textfild > input::placeholder{
     color: #f0ffff94;
+    font-family: 'Poppins', sans-serif;
 }
 .button-container {
     display: flex;
@@ -94,6 +102,7 @@ body *{
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #BDBDBD;
+    /* font-family: 'Poppins', sans-serif; */
 }
 a {
     text-decoration: none; 
@@ -123,6 +132,7 @@ a {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -136,7 +146,7 @@ a {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -187,5 +197,6 @@ a {
         margin: 10px 0; /* Adicionar margem entre os botões */
         padding: 12px 0; /* Diminuir o padding (espaçamento interno) dos botões */
         font-size: 12px; /* Diminuir o tamanho da fonte dos botões */
+        font-family: 'Poppins', sans-serif;
     }
 }

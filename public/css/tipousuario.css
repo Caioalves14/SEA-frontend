@@ -24,7 +24,8 @@ body *{
 }
 .left-user > h1{
     font-size: 3vw;
-    color: #699BF7;
+    color: #77ffc0;
+    font-family: 'Poppins', sans-serif;
 }
 .rigth-user{
     width: 50vw;
@@ -49,6 +50,7 @@ body *{
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card h1 {
@@ -61,6 +63,7 @@ body *{
     font-size: 1rem;
     color: #ADADAD; 
     line-height: 1.5;
+    /* font-family: 'Poppins', sans-serif; */
 }
 .container-users {
     display: flex;
@@ -73,6 +76,7 @@ body *{
 a {
     text-decoration: none; 
     color: inherit; 
+    /* font-family: 'Poppins', sans-serif; */
 }
 .card:hover {
     filter: brightness(1.1); 

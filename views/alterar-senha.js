@@ -1,7 +1,7 @@
 
 function alterarSenha(){
     // Definindo essas variáveis que vem dos campos da tela
-    const senhaAtual = document.getElementById("senhaAntiga").value;
+    const senhaAtual = document.getElementById("senhaAtual").value;
     const novaSenha = document.getElementById("novaSenha").value;
     const confirmaNovaSenha = document.getElementById("confNovaSenha").value;
     
@@ -11,8 +11,13 @@ function alterarSenha(){
     // :Definindo uma constante
     const dataSenha = {
         senhaAtual: senhaAtual,
+        novaSenha: novaSenha   
     };
-    
+    // Testagem para que nenhum dos campos fiquem nulos
+    if(!novaSenha || !confirmaNovaSenha || !senhaAtual){
+        alert("Por favor, preencha todos os campos")
+        return;
+    }
     // Verificando se a nova senha e a sua confirmação se coincidem
     if(novaSenha !== confirmaNovaSenha){
         alert("nova senha e sua confirmação não coincidem");
