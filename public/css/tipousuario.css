@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body{
+    background-color: #201b2c;
     margin: 0;
+    padding-top: 2rem;
 }
 body *{
     box-sizing: border-box;
@@ -36,17 +38,16 @@ body *{
 .card {
     cursor: pointer;
     flex: 1;
-    width: 200px;
-    height: 200px; 
+    width: 12.5rem;
     background-color: #2f2841;
     color: #f0ffffde;
-    border-radius: 10px;
+    border-radius: .625rem;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    margin: .625rem;
     box-shadow: 0px 10px 40px #00000056;
     text-align: center;
-    height: 100%;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
@@ -60,7 +61,7 @@ body *{
 
 .card p {
     font-size: 1rem;
-    color: #8a8a8a; 
+    color: #ADADAD; 
     line-height: 1.5;
     /* font-family: 'Poppins', sans-serif; */
 }
@@ -68,9 +69,9 @@ body *{
     display: flex;
 }
 .imagem-usuario {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 10px;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto .625rem;
 }
 a {
     text-decoration: none; 
@@ -99,7 +100,7 @@ a {
         font-size: 1.5rem; 
     }
 }*/
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 60rem){
     .main-user{
         flex-direction: column;
         width: 100vw;
@@ -119,14 +120,14 @@ a {
     .card {
         width: 30vw; 
         height: auto; 
-        margin: 10px 20px; 
+        margin: .625rem 1.25rem; 
     }
 
     .card h1 {
         font-size: 1.5rem; 
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 37.5rem){
     .container-users p {
         font-size: 2vw;
     }
@@ -140,6 +141,6 @@ a {
     .card {
         width: 50vw; 
         height: auto; 
-        margin: 10px 20px; 
+        margin: .625rem 1.25rem; 
     }
 }

@@ -8,31 +8,28 @@ body {
     flex-direction: column;
     height: 100%;
     flex-wrap: wrap;
+    transition: all 0.3s ;
+    overflow-x: hidden;
+    z-index: 1;
 }
 
 /* Cabeçalho da página */
 header {
-    background: #201B2C;
     position: fixed;
+    top: 0;
+    background: #201B2C;
     display: flex;
     height: 4.375rem;
-    width: 100%;
+    width: 93.9%;
     border: 1px solid #4B4B4B;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
+
 .inicio {
     display: flex;
-}
-
-.option-horizontal {
-    display: flex;
-    width: 140px;
-    justify-content: space-around;
-    padding-right: 3rem;
-    gap: 19.2px;
 }
 
 /* Contêiner principal da página */
@@ -43,6 +40,8 @@ header {
     height: 28.625rem;
     display: grid;
     justify-items: center;
+    transition: margin-left 0.3s ease, transform 0.3s ease;
+    z-index: 3;
 }
 
  /* Area de Pesquisa */
@@ -64,7 +63,7 @@ form {
     border: 0;
     width: 12.875rem;
     height: 2.5rem;
-    background-color: #2D2840;
+    background-color: #2CD986;
     color: #ffffff;
     font-size: 0.813rem;
     border-radius: 1.4375rem;
@@ -142,7 +141,7 @@ table.customTable thead {
 
 #titulo {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 1);
     margin: 0;
     padding-top: 0.8rem;
@@ -155,34 +154,91 @@ table.customTable thead {
     padding-left: 1.25rem;
 }
  /* Menu da pagina */
-#menu {
-    margin-top: 4.375rem;
+ #menu {
+    gap: .8125rem;
     display: flex;
     flex-direction: column;
     position: fixed;
     background-color: #201B2C;
     width: 3.86rem;
     height: 100%;
-    border: 1px solid #4B4B4B;
+    border-right: 1px solid #4B4B4B;
     transition: width 0.3s;
+    z-index: 4;
 }
 
 .menu-item {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    padding: 0.625rem 1rem;
+    padding: .375rem 1.125rem;
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    justify-content: flex-start;
+    justify-content:flex-start;
+    align-self: center;
 }
 
 .menu-item:hover {
     width: 100%;
     background-color: #2D2840;
+}
+
+.menu-text {
+    display: none;
+    padding-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1rem;
+    color: rgba(117, 117, 117);
+    font-family: 'Poppins', sans-serif
+}
+
+#menu:hover {
+    width: 15rem;
+    z-index: 3;
+}
+
+#menu:hover #separator {
+    width: 12rem;
+    transition: width ease;
+    margin: .875rem;
+}
+
+#menu:hover .menu-text {
     display: flex;
-    align-items: center;
+}
+
+#menu:hover + #container {
+    margin-left: 13.45rem;
+}
+
+#home, #ajuda {
+    margin-top: 2rem;
+    padding: 0.625rem 1.2rem;
+
+}
+
+#not {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.625rem 1rem;
+}
+
+#perfilopc {
+    width: 2.53419rem;
+    height: 2.53419rem;
+}
+
+#menu-icon{
+    padding-top: 1rem;
+    padding-left: 1.27rem;
+}
+
+#separator{
+    border-top: 1px solid #666;
+    margin: 1rem;
+    width: 1.125rem;
+    align-self: center;
 }
 
 a {
@@ -193,18 +249,8 @@ a {
 }
 
 .menu-item img {
-    width: 1.75rem;
-    height: 1.75rem;
-}
-
-.menu-text {
-    display: none;
-    padding-left: 1rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1rem;
-    color: white;
-    font-family: 'Poppins', sans-serif
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 #menu:hover {
@@ -216,17 +262,10 @@ a {
     display: flex;
 }
 
-#home,
-#ajuda {
-    margin-top: 5rem;
-    padding: 0.625rem 1rem;
-}
-
-#mdia,
 #not {
     width: 1.75rem;
     height: 1.75rem;
-    padding: 0.625rem 0.75rem;
+    padding: 0.625rem 3rem;
 }
 
 #perfilopc {
@@ -242,7 +281,7 @@ a {
     width: 174px;
     height: 40px;
     border-radius: 23px;
-    background: #4E466C;
+    background: #2CD986;
     align-items:center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -253,7 +292,7 @@ a {
   }
 
   #add-aluno:hover {
-    background-color: #1b1826;
+    background-color: #1D8F58;
     display: flex;
     align-items: center;
 }
@@ -270,3 +309,44 @@ a {
     padding-right: 2rem;
     height: 2rem;
   }
+
+  /* estilo do modal*/
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+dialog{
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D2840;
+    color: #FFF;
+    border-radius: .625rem;
+    border: none;
+    width: 50%;
+    height: 40%;
+  }
+
+#modaladd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ok,#cancela{
+    padding: .625rem;
+    margin: 1.5625rem .625rem;
+    background-color: #4E466C;
+    color: #FFF;
+    border: none;
+    border-radius: 1.875rem;
+    cursor: pointer;
+}
+
+#ok:hover,#cancela:hover{
+    background-color:rgba(0, 0, 0, 0.25);
+}
+
+#emailDialogInput{
+    width: 80%;
+    height: 1.875rem;
+}

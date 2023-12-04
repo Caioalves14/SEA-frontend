@@ -62,6 +62,6 @@ function toggleCategory(categoria = undefined) {
     const element2 = document.getElementById(elemento2);
     
     element2.style.background = "transparent";
-    elemento.style.background = "#7967a3";
+    elemento.style.background = "#5D557D";
     elemento.style.borderRadius = "8px";
 }

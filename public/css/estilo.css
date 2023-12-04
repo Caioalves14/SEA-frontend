@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins&display=swap');
 body{
+    background-color: #201b2c;
     margin: 0px;
 }
 body*{
@@ -9,8 +10,8 @@ body*{
 }
 
 .main-login{
-    width: 100vw;
-    height: 100vh;
+    padding-top: 2rem;
+    width: 100%;
     background-color: #201b2c;
     display: flex;
     justify-content: center;
@@ -18,7 +19,6 @@ body*{
 }
 .left-login{
     width: 50vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body*{
 }
 .left-login > h1{
     font-size: 3vw;
-    color: #77ffc0;
+    color: #2CD986;
     font-family: 'Poppins', sans-serif;
 }
 .rigth-login{
@@ -37,18 +37,19 @@ body*{
 }
 .card-login{
     width: 60%;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px 35px;
+    padding: 1.875rem 2.1875rem;
     background: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 
 }
 .card-login > h1{
-    color: #00ff88;
+    color: #2CD986;
     font-weight: 800;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -65,7 +66,7 @@ body*{
     width: 100%;
     border: none;
     border-radius: 10px;
-    padding: 15px;
+    padding: .9375rem;
     background:#514869 ;
     color: #f0ffffde;
     font-size: 12pt;
@@ -84,21 +85,24 @@ body*{
     font-family: 'Poppins', sans-serif;
 }
 .btn-login{
+    font-size: large;
     width: 100%;
-    padding: 16px 0px;
+    padding: 1rem 0px;
     margin: 25px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    font-weight: 700;
+    color: #ffffff;
+    background: #2CD986;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #BDBDBD;
-    /* font-family: 'Poppins', sans-serif; */
 }
+
+.btn-login:hover{
+    background-color: #1D8F58;
+}
+
 .btn-login a{
     text-decoration: none; 
     color: inherit; 
