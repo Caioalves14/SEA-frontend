@@ -34,6 +34,9 @@ function cadastrarUsuario() {
         })
         .then(data => {
             console.log("DEU BOM")
+            alert("Cadastro realizado com sucesso")
+            // window.location.href("./index.html")
+            window.location.href = "../index.html"
             // document.getElementById('resultado').textContent = 'Usuário cadastrado com sucesso';
         })
         .catch(error => {
