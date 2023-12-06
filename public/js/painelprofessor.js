@@ -147,15 +147,13 @@ var turma = {}
     function adicionar() {
         this.turma = {};
         this.turma.nome = document.getElementById('turmaNomeadd').value;
-        this.turma.email = document.getElementById('emailAlunoadd').value;
         // Verificar se algum campo obrigatório está vazio
         if (verificaCampo()) {
             return exibirPopUpErro("Não foi possível atualizar a turma, há algum campo vazio.");
         }
          // Criar o objeto de dados a ser enviado para o servidor
         const dadosTurma = {
-            nome: this.turma.nome,
-            emailAluno: this.turma.email
+            nome: this.turma.nome
         };
         let dadosJson = JSON.stringify(dadosTurma)
 
@@ -192,7 +190,6 @@ var turma = {}
 
         // Limpar os campos do formulário de adição
         document.getElementById('turmaNomeadd').value = '';
-        document.getElementById('emailAlunoadd').value = '';
     }
     //FUNÇÃO PARA EDITAR TURMA
     function editar() {

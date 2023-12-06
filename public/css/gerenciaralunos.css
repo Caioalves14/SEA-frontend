@@ -20,7 +20,7 @@ header {
     background: #201B2C;
     display: flex;
     height: 4.375rem;
-    width: 93.9%;
+    width: 95%;
     border: 1px solid #4B4B4B;
     justify-content: space-between;
     align-items: center;
@@ -34,14 +34,14 @@ header {
 
 /* Contêiner principal da página */
 #container {
-    margin-left: 3.95rem;
+    margin-left: 3.9rem;
     margin-top: 5rem;
-    width: 94.75%;
+    width: 94%;
     height: 28.625rem;
     display: grid;
     justify-items: center;
     transition: margin-left 0.3s ease, transform 0.3s ease;
-    z-index: 3;
+    z-index: 2;
 }
 
  /* Area de Pesquisa */
