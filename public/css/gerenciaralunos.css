@@ -90,13 +90,13 @@ form {
 }
 
 #caixa {
+    padding: 1.5rem;
     display: flex;
     width: 66.25rem;
-    height: 40.25rem;
     background-color: #2D2840;
-    filter: drop-shadow(1.84px 5.52px 17.50px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(1.84px 5.52px 17.5px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     align-items: center;

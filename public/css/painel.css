@@ -375,7 +375,7 @@ body * {
 }
 
 .dias li.active::before {
-    background: #4699E6;
+    background: #2CD986;
 }
 
 .dias li:not(.active):hover::before {
