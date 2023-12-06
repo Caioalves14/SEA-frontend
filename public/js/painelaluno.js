@@ -1,3 +1,76 @@
+var selectedId;
+var turmaList = [];
+var turma = {}
+ // Chamada para preencher as turmas (pode ser uma chamada à API ou carga inicial)
+ updateTurmas();
+ // Função para atualizar a exibição das turmas
+ function updateTurmas() {
+     var boxTurma = document.getElementById('box-turma');
+     boxTurma.innerHTML = '';
+
+     // Obtemos as turmas do backend
+     fetch('http://localhost:8080/ListTurmas', {
+         method: 'GET',
+         headers: {'Content-Type' : 'application/json'},
+         mode: 'cors'
+     })
+     .then(response => {
+         if (!response.ok) {
+             throw new Error('Erro ao obter turmas do backend');
+         }
+         return response.json();
+     })
+     .then(data => {
+         // Iteramos sobre as turmas e criamos os cards
+         data.forEach(turma => {
+             var turmaDiv = createTurmaCard(turma);
+             boxTurma.appendChild(turmaDiv);
+         });
+     })
+     .catch(error => {
+         console.error('Erro:', error);
+     });
+ }
+ // Função para criar um card de turma
+ function createTurmaCard(turma) {
+     // Criação da div principal para a turma
+     var turmaDiv = document.createElement('div');
+     turmaDiv.classList.add('turma');
+ 
+     // Adicionando nome da turma como título
+     var h2 = document.createElement('h2');
+     h2.innerText = turma.nome;
+ 
+     // Criação da div para as opções de editar e excluir
+     var optionDiv = document.createElement('div');
+     optionDiv.classList.add('turma-option');
+ 
+     // Criação do ícone de editar
+     var imgEdit = document.createElement('img');
+     imgEdit.setAttribute('src', '../public/imagem/Icon/Edit.svg');
+     // Adiciona um ouvinte de evento para abrir o popup de edição ao clicar
+     imgEdit.addEventListener('click', function() {
+         openEditPopup(turma.id);
+     });
+ 
+     // Criação do ícone de excluir
+     var imgDelete = document.createElement('img');
+     imgDelete.setAttribute('src', '../public/imagem/Icon/Delete.svg');
+     // Adiciona um ouvinte de evento para abrir o popup de excluir ao clicar
+     imgDelete.addEventListener('click', function() {
+         openRemovePopup(turma.id); 
+     });
+ 
+     // Adicionando elementos à div turma-option
+     optionDiv.appendChild(imgEdit);
+     optionDiv.appendChild(imgDelete);
+ 
+     // Adicionando elementos ao card da turma
+     turmaDiv.appendChild(h2);
+     turmaDiv.appendChild(optionDiv);
+ 
+     return turmaDiv;
+ }
 const diasTag = document.querySelector(".dias"),
     dataAtual = document.querySelector(".data-atual"),
     iconesAntProx = document.querySelectorAll(".seta span");

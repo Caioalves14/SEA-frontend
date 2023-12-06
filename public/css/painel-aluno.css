@@ -361,3 +361,144 @@ ul {
     width: 1.125rem;
     align-self: center;
 }
+
+/* Estilo para a tela escura de fundo 
+.telaDesativada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Estilo para o backdrop 
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+}*/
+
+/* Estilo para o popup de remoção */
+.popupRemove {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#2D2840;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+    transition: transform 0.4s, top 0.4s; 
+}
+
+.popupRemove.open_popup {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: block;
+}
+
+/* Estilo para o popup de edição */
+.popupEdit {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  #2D2840;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+    transition: transform 0.4s, top 0.4s; 
+}
+
+.popupEdit.popupEditOpen {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: block;
+}
+
+
+.popupAdd {
+    width: 400px;
+    background-color: #2D2840;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #f5f5f5;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popupAdd.openAddPopup {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    visibility: visible;
+}
+
+.popupAdd img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.popupAdd h2 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+
+/* Estilo para os botões dentro dos popups */
+.popupRemove button,
+.popupEdit button,
+.popupAdd button {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Estilo para a caixa de turmas */
+.box-turma {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para cada card de turma */
+.turma {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Estilo para as opções de edição/exclusão dentro do card */
+.turma-option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Estilo para os ícones de edição/exclusão */
+.turma-option img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
